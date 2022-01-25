@@ -1,0 +1,21 @@
+\section{Desarrollo teórico}
+
+Aquí tienes un ejemplo de cómo hacer una serie de elementos enumerados. No es la forma más práctica si vas a hacer una lista larga de elementos, es más conveniente recurrir al comando \verb|\subsection{}| o \verb|\subsubsection{}|.
+
+Otro detalle: fíjate que si quieres introducir ecuaciones, deberás incluirlas entre dos símbolos de \verb|$|.
+
+También puedes usar el comando \verb|\todo{}| para dejarte marcadas cosas que harás más tarde.
+
+\begin{enumerate}
+    \item \textbf{Determinar la sensibilidad del sensor.} \\
+    La sensibilidad típica del sensor es de $15 \frac{mV/V}{kA/m}$.
+    \item \textbf{Para una tensión de excitación del puente de Wheatstone de 5V, determinar la sensibilidad del sensor.} \\
+    \centerline{$S = 75 \frac{mV}{kA/m} = 75 \frac{\mu V}{A/m}$}
+    \item \textbf{Sabiendo que el campo terrestre es de alrededor de 40A/m, determinar la tensión de salida del sensor debido al campo terrestre.} \\
+    \centerline{$V_{out} = 3 mV = 3000 \mu V$}
+    \item \textbf{Con objeto de utilizar el sensor para medir corriente se ha colocado un hilo de Cu de 1mm de diámetro sobre el CI, de forma que el campo magnético generado por el paso de corriente sea en la dirección de sensado del puente. Según especificaciones del CI, el puente magnetorresistivo está colocado 0.4mm por debajo de la superficie. Determinar el campo magnético generado en el puente cuando circula una corriente de 1A por el hilo de Cu (para ello, considerar que la distancia del centro de hilo de Cu y el puente magnetorresistivio es de 1,2mm, ya que debemos tener en cuenta el espesor del esmalte del hilo de Cu, así como el espesor del pegamento utilizado en el pegado).} \\
+    \centerline{$H = \frac{I}{2 \pi r} = 132,63 A/m$}
+    \item \textbf{Determinar la ganancia que deberíamos tener en el amplificador conectado a la salida del puente para obtener una sensibilidad de 1V/A. Determinar el valor de la resistencia de ajuste de ganancia para obtener esta ganancia (potenciómetro de $1k\Omega$ en el esquemático de la fig.2). La ganancia del AD620 es $G=1+49,4k\Omega/R_g$} \\
+    \centerline{ ... }\todo{Ni idea de cómo hacer esto...} \\
+    \centerline{$G = 1+49,4k\Omega/R_g \to R_g = \frac{49400}{G-1} = ...$}
+\end{enumerate}

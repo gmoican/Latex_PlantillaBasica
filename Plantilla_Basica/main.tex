@@ -1,0 +1,36 @@
+\documentclass[a4paper,12pt, titlepage, openany]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{subcaption} % Varias figuras
+
+\input{configuracioninicial.tex}
+
+\title{\textbf{Proyectitos guays en Overleaf \\ - \\ Plantilla de LaTeX}}
+\author{Guillermo Moñino Canovas}
+\date{25 de Enero 2022}
+
+\begin{document}
+
+\let\originalnewpage\newpage
+\let\newpage\relax
+\maketitle
+\let\newpage\originalnewpage
+
+\include{00_intro}
+
+\include{01_teorico}
+
+\include{02_practico}
+
+\include{03_conclusiones}
+
+\end{document}
